@@ -2,13 +2,13 @@ import React from 'react';
 
 const Profile = () => {
   return (
-    <div className="space-y-6">
-      <p className="text-lg text-gray-300">
+    <div className="space-y-6 group">
+      <p className="text-lg text-gray-300 group-hover:text-blue-300 transition-colors duration-300">
         A passionate Data Engineer with over 4 years of experience in building robust data pipelines
         and implementing cutting-edge solutions. My journey from Cape Peninsula University of Technology
         to the University of Wisconsin-Green Bay has shaped my approach to problem-solving and innovation.
       </p>
-      <div className="relative w-full h-[300px] rounded-lg overflow-hidden">
+      <div className="relative w-full h-[300px] rounded-lg overflow-hidden transform group-hover:scale-105 transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/20">
         <img
           src="https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif"
           alt="Coding Animation"

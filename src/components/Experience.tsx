@@ -28,28 +28,32 @@ const Experience = () => {
   ];
 
   return (
-    <div className="py-20 bg-gray-900">
+    <div className="py-20 bg-gray-900" id="experience">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center text-white mb-16">Experience</h2>
         <div className="space-y-12">
           {experiences.map((exp, index) => (
             <div
               key={index}
-              className="relative p-8 bg-gray-800 rounded-xl hover:bg-gray-750 transition-colors duration-300"
+              className="relative p-8 bg-gray-800 rounded-xl transition-all duration-300 hover:scale-[1.02] hover:shadow-xl hover:shadow-blue-500/20 group"
             >
               <div className="absolute -left-3 top-8">
-                <div className="w-6 h-6 bg-purple-500 rounded-full">
+                <div className="w-6 h-6 bg-blue-500 rounded-full group-hover:bg-blue-400 transition-colors duration-300">
                   <Briefcase className="w-4 h-4 text-white absolute top-1 left-1" />
                 </div>
               </div>
               <div className="ml-6">
-                <h3 className="text-2xl font-bold text-white">{exp.title}</h3>
-                <div className="text-purple-400 mb-4">{exp.company} | {exp.period}</div>
-                <p className="text-gray-300 mb-4">{exp.description}</p>
+                <h3 className="text-2xl font-bold text-white group-hover:text-blue-300 transition-colors duration-300">
+                  {exp.title}
+                </h3>
+                <div className="text-blue-400 mb-4">{exp.company} | {exp.period}</div>
+                <p className="text-gray-300 mb-4 group-hover:text-gray-200 transition-colors duration-300">
+                  {exp.description}
+                </p>
                 <ul className="space-y-2">
                   {exp.achievements.map((achievement, idx) => (
-                    <li key={idx} className="text-gray-400 flex items-center">
-                      <span className="w-1.5 h-1.5 bg-purple-400 rounded-full mr-2"></span>
+                    <li key={idx} className="text-gray-400 flex items-center group-hover:text-gray-300 transition-colors duration-300">
+                      <span className="w-1.5 h-1.5 bg-blue-400 rounded-full mr-2 group-hover:bg-blue-300"></span>
                       {achievement}
                     </li>
                   ))}

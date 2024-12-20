@@ -22,7 +22,7 @@ const Contact = () => {
   }, []);
 
   return (
-    <div className="py-20 bg-gray-800 relative overflow-hidden">
+    <div className="py-20 bg-gray-800 relative overflow-hidden" id="contact">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center text-white mb-16">Get in Touch</h2>
         <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -32,7 +32,7 @@ const Contact = () => {
                 <label className="block text-white mb-2">Name</label>
                 <input
                   type="text"
-                  className="w-full px-4 py-2 bg-gray-900 text-white rounded-lg focus:ring-2 focus:ring-purple-400 outline-none"
+                  className="w-full px-4 py-2 bg-gray-900 text-white rounded-lg focus:ring-2 focus:ring-blue-400 outline-none transition-all duration-300 hover:bg-gray-800"
                   placeholder="Your name"
                 />
               </div>
@@ -40,20 +40,20 @@ const Contact = () => {
                 <label className="block text-white mb-2">Email</label>
                 <input
                   type="email"
-                  className="w-full px-4 py-2 bg-gray-900 text-white rounded-lg focus:ring-2 focus:ring-purple-400 outline-none"
+                  className="w-full px-4 py-2 bg-gray-900 text-white rounded-lg focus:ring-2 focus:ring-blue-400 outline-none transition-all duration-300 hover:bg-gray-800"
                   placeholder="your@email.com"
                 />
               </div>
               <div>
                 <label className="block text-white mb-2">Message</label>
                 <textarea
-                  className="w-full px-4 py-2 bg-gray-900 text-white rounded-lg focus:ring-2 focus:ring-purple-400 outline-none h-32"
+                  className="w-full px-4 py-2 bg-gray-900 text-white rounded-lg focus:ring-2 focus:ring-blue-400 outline-none h-32 transition-all duration-300 hover:bg-gray-800"
                   placeholder="Your message"
                 ></textarea>
               </div>
               <button
                 type="submit"
-                className="w-full py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors"
+                className="w-full py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-all duration-300"
               >
                 Send Message
               </button>
@@ -64,18 +64,24 @@ const Contact = () => {
               ref={globeRef}
               className="relative w-64 h-64 mx-auto transition-transform duration-200 ease-out"
             >
-              <Globe className="w-full h-full text-purple-400 animate-pulse" />
+              <Globe className="w-full h-full text-blue-400 animate-pulse" />
             </div>
             <div className="flex justify-center gap-6 mt-8">
-              <a href="#" className="text-gray-400 hover:text-purple-400 transition-colors">
-                <Mail className="w-6 h-6" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-purple-400 transition-colors">
-                <Linkedin className="w-6 h-6" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-purple-400 transition-colors">
-                <Github className="w-6 h-6" />
-              </a>
+              {[
+                { icon: Mail, href: "mailto:contact@example.com" },
+                { icon: Linkedin, href: "https://linkedin.com" },
+                { icon: Github, href: "https://github.com" }
+              ].map((social, index) => (
+                <a
+                  key={index}
+                  href={social.href}
+                  className="text-gray-400 hover:text-blue-400 transition-all duration-300"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <social.icon className="w-6 h-6" />
+                </a>
+              ))}
             </div>
           </div>
         </div>

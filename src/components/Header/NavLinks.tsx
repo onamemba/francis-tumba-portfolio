@@ -1,18 +1,32 @@
 import React from 'react';
 
 const NavLinks = () => {
-  const links = ['About', 'Skills', 'Experience', 'Projects', 'Education', 'Contact'];
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const links = [
+    { name: 'About', id: 'about' },
+    { name: 'Skills', id: 'skills' },
+    { name: 'Experience', id: 'experience' },
+    { name: 'Projects', id: 'projects' },
+    { name: 'Education', id: 'education' },
+    { name: 'Contact', id: 'contact' }
+  ];
   
   return (
     <nav className="hidden md:flex items-center space-x-8">
       {links.map((link) => (
-        <a
-          key={link}
-          href={`#${link.toLowerCase()}`}
-          className="text-gray-300 hover:text-blue-400 transition-colors"
+        <button
+          key={link.id}
+          onClick={() => scrollToSection(link.id)}
+          className="text-gray-300 hover:text-blue-400 transition-colors cursor-pointer"
         >
-          {link}
-        </a>
+          {link.name}
+        </button>
       ))}
     </nav>
   );
