@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900">
       <AirplaneGame />
-      <Cursor3D />
+      {/* <Cursor3D /> */}
       <div className="relative z-10 text-center px-4">
         <h1 className="hero-title text-5xl md:text-7xl font-bold text-white mb-6 transition-transform duration-300">
           Hi, I am Francis Tumba

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Clock, Book, Gamepad2, Trophy } from 'lucide-react';
+import { BrainCircuit , Book, Gamepad2, Trophy } from 'lucide-react';
 
 const About = () => {
   return (
@@ -9,15 +9,16 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="text-lg text-gray-300">
-              A passionate Data Engineer with over 4 years of experience in building robust data pipelines
-              and implementing cutting-edge solutions. My journey from Cape Peninsula University of Technology
-              to the University of Wisconsin-Green Bay has shaped my approach to problem-solving and innovation.
+            I’m Francis Tumba, a passionate Data Engineer originally from South Africa, where I gained valuable experience working in data engineering,
+            cloud technologies, and software development. I’m now based in the United States, pursuing a Computer Science degree at the University of Wisconsin-Green Bay. 
+            My expertise lies in transforming complex data into actionable insights, with a keen interest in AI/ML and DevOps. Outside of tech, 
+            I’m an gamer and sports buff who loves exploring new challenges and crafting innovative solutions that make an impact.
             </p>
             <div className="grid grid-cols-2 gap-4">
               <div className="p-4 bg-gray-800 rounded-lg">
-                <Clock className="w-8 h-8 text-purple-400 mb-2" />
-                <h3 className="text-white font-semibold">4+ Years</h3>
-                <p className="text-gray-400">Experience</p>
+                <BrainCircuit  className="w-8 h-8 text-purple-400 mb-2" />
+                <h3 className="text-white font-semibold">AI/ML</h3>
+                <p className="text-gray-400">Enthusiast</p>
               </div>
               <div className="p-4 bg-gray-800 rounded-lg">
                 <Book className="w-8 h-8 text-purple-400 mb-2" />
@@ -32,7 +33,7 @@ const About = () => {
               <div className="p-4 bg-gray-800 rounded-lg">
                 <Trophy className="w-8 h-8 text-purple-400 mb-2" />
                 <h3 className="text-white font-semibold">Sports</h3>
-                <p className="text-gray-400">Enthusiast</p>
+                <p className="text-gray-400">Fanatic</p>
               </div>
             </div>
           </div>

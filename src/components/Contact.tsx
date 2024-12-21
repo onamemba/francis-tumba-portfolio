@@ -32,7 +32,7 @@ const Contact = () => {
                 <label className="block text-white mb-2">Name</label>
                 <input
                   type="text"
-                  className="w-full px-4 py-2 bg-gray-900 text-white rounded-lg focus:ring-2 focus:ring-blue-400 outline-none transition-all duration-300 hover:bg-gray-800"
+                  className="w-full px-4 py-2 bg-gray-900 text-white rounded-lg focus:ring-2 focus:ring-blue-400 outline-none transition-all duration-300"
                   placeholder="Your name"
                 />
               </div>
@@ -40,14 +40,14 @@ const Contact = () => {
                 <label className="block text-white mb-2">Email</label>
                 <input
                   type="email"
-                  className="w-full px-4 py-2 bg-gray-900 text-white rounded-lg focus:ring-2 focus:ring-blue-400 outline-none transition-all duration-300 hover:bg-gray-800"
+                  className="w-full px-4 py-2 bg-gray-900 text-white rounded-lg focus:ring-2 focus:ring-blue-400 outline-none transition-all duration-300"
                   placeholder="your@email.com"
                 />
               </div>
               <div>
                 <label className="block text-white mb-2">Message</label>
                 <textarea
-                  className="w-full px-4 py-2 bg-gray-900 text-white rounded-lg focus:ring-2 focus:ring-blue-400 outline-none h-32 transition-all duration-300 hover:bg-gray-800"
+                  className="w-full px-4 py-2 bg-gray-900 text-white rounded-lg focus:ring-2 focus:ring-blue-400 outline-none h-32 transition-all duration-300"
                   placeholder="Your message"
                 ></textarea>
               </div>
