@@ -68,9 +68,9 @@ const Contact = () => {
             </div>
             <div className="flex justify-center gap-6 mt-8">
               {[
-                { icon: Mail, href: "mailto:contact@example.com" },
-                { icon: Linkedin, href: "https://linkedin.com" },
-                { icon: Github, href: "https://github.com" }
+                { icon: Mail, href: "onamemba@gmail.com" },
+                { icon: Linkedin, href: "linkedin.com/in/francis-tumba-8628b4127" },
+                { icon: Github, href: "https://github.com/onamemba/" }
               ].map((social, index) => (
                 <a
                   key={index}
