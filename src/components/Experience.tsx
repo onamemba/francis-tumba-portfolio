@@ -5,24 +5,24 @@ const Experience = () => {
   const experiences = [
     {
       title: "Senior Data Engineer",
-      company: "Tech Corp",
+      company: "Autumn Leaf IT",
       period: "2021 - Present",
       description: "Led the development of scalable data pipelines and implemented ML models for predictive analytics.",
       achievements: [
-        "Reduced data processing time by 60%",
-        "Implemented real-time analytics dashboard",
-        "Led a team of 5 engineers"
+        "Led the migration to cloud-based integration, improving annual revenues by 37%",
+        "Collaborated with data scientists and engineers to develop data pipelines, resulting in a 40% increase in data availability",
+        "Oversaw a team of 5 engineers to implement data-driven solutions, resulting in a 50% increase in data accessibility and 30% increase in data accuracy"
       ]
     },
     {
       title: "Data Engineer",
-      company: "Data Solutions Inc",
+      company: "Liberty Life",
       period: "2019 - 2021",
       description: "Designed and maintained ETL processes and data warehousing solutions.",
       achievements: [
-        "Built automated data quality checks",
-        "Optimized database performance",
-        "Integrated multiple data sources"
+        "Developed and maintained data pipeline, ingesting data across 12 disparate sources using EMR, S3 and Python",
+        "Used Airflow to build ETL solutions that helped improve conversion rates by 16%",
+        "Supported senior business intelligence analysts in building reports and analyzing trends, improving data quality by 36% and facilitating accurate reporting"
       ]
     }
   ];

@@ -1,12 +1,12 @@
 import React from 'react';
-import { Clock, Book, Gamepad2, Trophy } from 'lucide-react';
+import { BrainCircuit, Book, Gamepad2, Trophy } from 'lucide-react';
 
 const Stats = () => {
   const stats = [
-    { icon: <Clock />, title: "4+ Years", subtitle: "Experience" },
+    { icon: <BrainCircuit />, title: "AI/ML", subtitle: "Enthusiast" },
     { icon: <Book />, title: "Continuous", subtitle: "Learning" },
     { icon: <Gamepad2 />, title: "Gaming", subtitle: "Hobby" },
-    { icon: <Trophy />, title: "Sports", subtitle: "Enthusiast" }
+    { icon: <Trophy />, title: "Sports", subtitle: "Fanatic" }
   ];
 
   return (

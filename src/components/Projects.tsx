@@ -4,23 +4,23 @@ import { ExternalLink, Github } from 'lucide-react';
 const Projects = () => {
   const projects = [
     {
-      title: "AI Transcription & Summarization",
-      description: "Built an app that transcribes audio and generates summaries using OpenAI's GPT-3.",
+      title: "Rec.ol.lect - AI Transcription & Summarization",
+      description: "Built a website that transcribes audio and generates summaries using Hugging Face Model",
       image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      tech: ["Python", "OpenAI", "React", "FastAPI"],
+      tech: ["Python", "Hugging face", "React", "FastAPI"],
       links: {
-        demo: "https://demo.example.com",
-        github: "https://github.com/example"
+        demo: "https://lecture-summarizer-web-ai.vercel.app/",
+        github: "https://github.com/onamemba/lecture-summarizer-web-ai"
       }
     },
     {
-      title: "AI Chat Application",
-      description: "Developed a real-time chat application with AI-powered responses and analytics.",
+      title: "Advo - AI Chat Application",
+      description: "Developed a app that use AI to help you chat",
       image: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      tech: ["React", "Node.js", "Socket.io", "TensorFlow"],
+      tech: ["React Native", "Node.js", "Open AI", "AWS"],
       links: {
-        demo: "https://demo.example.com",
-        github: "https://github.com/example"
+        demo: "https://lecture-summarizer-web-ai.vercel.app/",
+        github: "https://github.com/onamemba/lecture-summarizer-web-ai"
       }
     }
   ];

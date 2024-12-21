@@ -11,17 +11,17 @@ const Skills = () => {
     {
       category: "Cloud Technologies",
       icon: <Cloud className="w-8 h-8" />,
-      items: ["AWS", "Azure", "Docker", "Kubernetes"]
+      items: ["AWS", "Snowflake", "Apache Airflow", "Tableau"]
     },
     {
       category: "AI/ML",
       icon: <Brain className="w-8 h-8" />,
-      items: ["TensorFlow", "PyTorch", "NLP", "Computer Vision"]
+      items: ["TensorFlow", "AWS Sagemaker", "Hugging Face", "Apache spark"]
     },
     {
       category: "Development",
       icon: <Terminal className="w-8 h-8" />,
-      items: ["React", "Node.js", "Git", "CI/CD"]
+      items: ["Data Pipelines", "Data Visualization", "Apps", "Websites"]
     }
   ];
 
