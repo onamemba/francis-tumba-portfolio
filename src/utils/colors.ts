@@ -1,12 +1,9 @@
 export const colors = {
-  primary: {
-    light: '#60a5fa', // blue-400
-    DEFAULT: '#3b82f6', // blue-500
-    dark: '#2563eb', // blue-600
-  },
-  background: {
-    light: '#111827', // gray-900
-    DEFAULT: '#0f172a', // gray-800
-    dark: '#0f172a', // gray-900
+  cyber: {
+    primary: '#3b82f6', // Original blue
+    secondary: '#1e3a8a', // Darker blue
+    accent: '#60a5fa', // Light blue
+    glow: 'rgba(59, 130, 246, 0.5)', // Blue glow
+    dark: '#0f172a', // Dark blue background
   }
 };

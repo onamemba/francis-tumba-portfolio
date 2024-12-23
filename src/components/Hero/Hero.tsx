@@ -1,36 +1,31 @@
 import React from 'react';
-import { TypeAnimation } from 'react-type-animation';
-import AirplaneGame from './AirplaneGame';
-import Cursor3D from './Cursor3D';
+import CyberCircle from './CyberCircle';
+import CyberOverlay from './CyberOverlay';
+import CyberTitle from './CyberTitle';
 import ScrollIndicator from './ScrollIndicator';
 
 const Hero = () => {
+  const roles = ['Engineer', 'Programmer', 'Leader'];
+
   return (
-    <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900">
-      <AirplaneGame />
-      {/* <Cursor3D /> */}
-      <div className="relative z-10 text-center px-4">
-        <h1 className="hero-title text-5xl md:text-7xl font-bold text-white mb-6 transition-transform duration-300">
-          Hi, I am Francis Tumba
-        </h1>
-        <div className="hero-subtitle text-2xl md:text-4xl text-blue-200 mb-8 transition-transform duration-300">
-          I'm a{' '}
-          <TypeAnimation
-            sequence={[
-              'Engineer',
-              2000,
-              'Programmer',
-              2000,
-              'Leader',
-              2000,
-            ]}
-            wrapper="span"
-            speed={50}
-            repeat={Infinity}
-            className="text-blue-400"
-          />
-        </div>
-      </div>
+    <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-cyber-dark">
+      <CyberOverlay />
+      <CyberCircle />
+      
+      {/* Decorative Elements */}
+      <div className="absolute top-10 left-10 w-32 h-1 bg-cyber-primary/30 animate-cyber-scan" />
+      <div className="absolute bottom-10 right-10 w-32 h-1 bg-cyber-primary/30 animate-cyber-scan" />
+      
+      {/* Corner Frames */}
+      <div className="absolute top-0 left-0 w-32 h-32 border-l-2 border-t-2 border-cyber-primary/50" />
+      <div className="absolute top-0 right-0 w-32 h-32 border-r-2 border-t-2 border-cyber-primary/50" />
+      <div className="absolute bottom-0 left-0 w-32 h-32 border-l-2 border-b-2 border-cyber-primary/50" />
+      <div className="absolute bottom-0 right-0 w-32 h-32 border-r-2 border-b-2 border-cyber-primary/50" />
+
+      <CyberTitle 
+        title="Hi, I am Francis Tumba"
+        roles={roles}
+      />
       <ScrollIndicator />
     </div>
   );
