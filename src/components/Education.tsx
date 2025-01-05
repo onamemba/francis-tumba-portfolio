@@ -10,12 +10,12 @@ const Education = () => {
           {[
             {
               school: "University of Wisconsin-Green Bay",
-              degree: "Bachelor Degree in Computer Science (Ongoing)",
-              description: "Currently pursuing advanced studies in computer science, with emphasis in software engineering."
+              degree: "Master Degree in Data Science Analytics (Ongoing)",
+              description: "Currently researching and building Language Models application."
             },
             {
               school: "Cape Peninsula University of Technology",
-              degree: "Associate Degree in Computer Engineering",
+              degree: "BTech Degree in Computer Engineering",
               description: "Completed comprehensive studies in computer engineering, laying the foundation for a career in technology."
             }
           ].map((edu, index) => (
