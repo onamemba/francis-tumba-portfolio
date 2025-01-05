@@ -13,9 +13,12 @@ const ProfileText = () => {
       <div className="relative">
         <div className="absolute -inset-1 bg-cyber-primary/5 blur-sm rounded-lg" />
         <p className="relative text-lg text-gray-300 font-mono leading-relaxed">
-          <span className="text-cyber-primary">{'>'}</span> A passionate Data Engineer with over 4 years of experience in building robust data pipelines
-          and implementing cutting-edge solutions. My journey from Cape Peninsula University of Technology
-          to the University of Wisconsin-Green Bay has shaped my approach to problem-solving and innovation.
+          <span className="text-cyber-primary">{'>'}</span> 
+          I’m Francis Tumba, a passionate Data Engineer now based in the United States, currently pursuing a Master’s degree in 
+          Computer Science at the University of Wisconsin-Green Bay. With extensive experience in data engineering, cloud technologies,
+          and software development, my expertise lies in transforming complex data into actionable insights. I have a keen interest in AI/ML
+          and Data Science. Outside of tech, I’m a gamer and sports fanatic who loves exploring new challenges and crafting innovative solutions
+          that make an impact.
         </p>
       </div>
     </CyberCard>
